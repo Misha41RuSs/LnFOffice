@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.*;
 public class FormController {
 
     public static class FormData {
-        public String fullname;
+        public String fullName;
         public String phone;
     }
 
     @PostMapping("/form")
     public void handleForm(@RequestBody FormData formData) {
-        System.out.println("Получено: ФИО = " + formData.fullname + ", Телефон = " + formData.phone);
+        System.out.println("Получено: ФИО = " + formData.fullName + ", Телефон = " + formData.phone);
     }
 }
